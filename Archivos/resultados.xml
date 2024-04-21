@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resultados>
+	<animales>
+		<perro>
+			<CantidadTotal>4</CantidadTotal>
+		</perro>
+		<gato>
+			<CantidadTotal>2</CantidadTotal>
+		</gato>
+		<conejo>
+			<CantidadTotal>2</CantidadTotal>
+		</conejo>
+	</animales>
+</resultados>

@@ -20,20 +20,21 @@
                 </form>
             </div>
             <div class="col">
-                <h1 class="text-center">Revisión</h1>
-                <form>
-                    {% csrf_token %}
-                    {% if content %}
-                    <div class="form-group">
-                        <textarea class="form-control w-100" id="revision" rows="10" cols="100">{{ content }}</textarea>
-                    </div>
-                    {% else %}
-                    <div class="form-group">
-                        <textarea class="form-control w-100" id="revision" rows="10" cols="100"></textarea>
-                    </div>
-                    {% endif %}
-                </form>
-            </div>
+              <h1 class="text-center">Revisión</h1>
+              <form>
+                  {% csrf_token %}
+                  {% if content %}
+                  <div class="form-group">
+                      <textarea class="form-control w-100" id="revision" rows="10" cols="100">{{ content }}</textarea>
+                  </div>
+                  {% else %}
+                  <div class="form-group">
+                      <textarea class="form-control w-100" id="revision" rows="10" cols="100"></textarea>
+                  </div>
+                  {% endif %}
+                  <a href="/download" class="btn btn-primary">Recargar Datos</a>
+              </form>
+          </div>
         </div>
     </div>
 </body>
