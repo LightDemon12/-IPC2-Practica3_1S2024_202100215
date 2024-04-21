@@ -33,7 +33,7 @@ def cargarXML(request):
         form = FileForm(request.POST, request.FILES)
         if form.is_valid():
             uploaded_file = form.cleaned_data['file']
-            txt = uploaded_file.read().decode('utf-8')  # Lee el contenido del archivo
+            txt = uploaded_file.read() # Lee el contenido del archivo
             response = requests.post('http://localhost:5000/upload', data=txt)  # Cambia API+'/results' a 'http://localhost:5000/upload'
             if response.status_code == 200:
                 xml_response = response.text  # Lee la respuesta como texto
@@ -48,10 +48,10 @@ def cargarXML(request):
 def clear_animals(request):
     response = requests.delete('http://localhost:5000/clear')
     if response.status_code == 200:
-        return render(request, 'index.html')
+        return render(request, 'clear_success.html', {'alert_message': '¡Bien hecho! Las mascotas se han borrado con éxito.'})
     else:
-        return render(request, 'index.html')
-    
+        return render(request, 'clear_error.html', {'alert_message': '¡Error! Hubo un problema al intentar borrar las mascotas.'})
+
 def posts(request):
     context = {
         'posts': None

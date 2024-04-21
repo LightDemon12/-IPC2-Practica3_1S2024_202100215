@@ -40,44 +40,5 @@
         <edad>5</edad>
         <raza>Holandés</raza>
     </conejo>
-    <perro>
-        <edad>5</edad>
-        <raza>Labrador</raza>
-    </perro>
-    <gato>
-        <edad>3</edad>
-        <raza>Siames</raza>
-    </gato>
-    <conejo>
-        <edad>4</edad>
-        <raza>Enano</raza>
-    </conejo>
-    <perro>
-        <edad>2</edad>
-        <raza>Chihuahua</raza> 
-    </perro>
-    <gato>
-        <edad>2</edad>
-        <raza>Persa</raza>
-    </gato>
-    <conejo>
-        <edad>5</edad>
-        <raza>Holandés</raza>
-    </conejo>
-    <perro>
-        <edad>7</edad>
-        <raza>Golden Retriever</raza>
-    </perro>
-    <gato>
-        <edad>3</edad>
-        <raza>Azul</raza>
-    </gato>
-    <conejo>
-        <edad>1</edad>
-        <raza>Beagle</raza> 
-    </conejo>
-    <perro>
-        <edad>4</edad>
-        <raza>Bulldog</raza> 
-    </perro>
 </ingresoAnimales>
+

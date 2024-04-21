@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, render_template, send_file , Response
 from flask_cors import CORS
 import xml.etree.ElementTree as ET
 from Logica.Estructura import Animal
-from Logica.XML_Reader import read_xml, filter_animals, create_xml
 from xml.dom import minidom
 import os
 
@@ -55,6 +54,7 @@ def upload_file():
 
     return ET.tostring(root, encoding='utf8', method='xml')
     return xml_pretty_str
+
 
 @app.route('/process', methods=['GET'])
 def process_file():
