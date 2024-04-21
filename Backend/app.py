@@ -39,6 +39,7 @@ def upload_file():
     
     return ET.tostring(root, encoding='utf8', method='xml')
 
+
 @app.route('/process', methods=['GET'])
 def process_file():
     # Aquí puedes procesar el archivo XML y devolver los resultados
@@ -52,8 +53,22 @@ def process_file():
 def get_results():
     animalesresult= []
     for animal in animales:
-        animalesresult.append(animal.__dict__)
+        animal_dict = {
+            'tag': animal.tag,
+            'attributes': animal.attrib,
+            'text': animal.text
+        }
+        animalesresult.append(animal_dict)
     return jsonify(animalesresult)
+
+@app.route('/clear', methods=['DELETE'])
+def clear_animals():
+    animales.clear()  # Borra todos los elementos de la lista
+    contadores['perro'] = 0  # Restablece los contadores
+    contadores['gato'] = 0
+    contadores['conejo'] = 0
+    return jsonify({'message': 'Animales cleared'}), 200
+
 
 if __name__ == '__main__':
     app.run(host='localhost', port='5000',debug=True)

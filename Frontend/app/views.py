@@ -43,3 +43,10 @@ def cargarXML(request):
         return render(request, 'Carga.html')
     else:
         return render(request, 'Carga.html')
+
+def clear_animals(request):
+    response = requests.delete('http://localhost:5000/clear')
+    if response.status_code == 200:
+        return render(request, 'index.html')
+    else:
+        return render(request, 'index.html')
