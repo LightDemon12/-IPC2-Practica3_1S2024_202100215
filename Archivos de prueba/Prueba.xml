@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ingresoAnimales>
+    <perro>
+        <edad>5</edad>
+        <raza>Labrador</raza>
+    </perro>
+    <gato>
+        <edad>3</edad>
+        <raza>Siames</raza>
+    </gato>
+    <lagartija>
+        <edad>1</edad>
+        <raza>Verde</raza>
+    </lagartija>
+    <perro>
+        <edad>2</edad>
+        <raza>Chihuahua</raza> 
+    </perro>
+    <conejo>
+        <edad>4</edad>
+        <raza>Enano</raza>
+    </conejo>
+    <perro>
+        <edad>7</edad>
+        <raza>Golden Retriever</raza>
+    </perro>
+    <gato>
+        <edad>2</edad>
+        <raza>Persa</raza>
+    </gato>
+    <lagartija>
+        <edad>3</edad>
+        <raza>Azul</raza>
+    </lagartija>
+    <perro>
+        <edad>1</edad>
+        <raza>Beagle</raza> 
+    </perro>
+    <conejo>
+        <edad>5</edad>
+        <raza>Holandés</raza>
+    </conejo>
+</ingresoAnimales>
+
+
